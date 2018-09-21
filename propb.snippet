@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets
+    xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>propb</Title>
+      <Author>Tomasz Chudzik</Author>
+      <Description>Property for WPF binding</Description>
+      <Shortcut>propb</Shortcut>
+      <SnippetTypes>
+        <SnippetType></SnippetType>
+      </SnippetTypes>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal>
+          <ID>PropertyType</ID>
+          <ToolTip>Type for the property and variable</ToolTip>
+          <Default>int</Default>
+        </Literal>
+        <Literal>
+          <ID>VariableName</ID>
+          <Default>_myVar</Default>
+        </Literal>
+        <Literal>
+          <ID>PropertyName</ID>
+          <Default>PropertyName</Default>
+        </Literal>
+      </Declarations>
+      <Code Language="CSharp">
+        <![CDATA[private $PropertyType$ $VariableName$;
+                public $PropertyType$ $PropertyName$
+        {
+            get { return $VariableName$; }
+            set { SetProperty(ref $VariableName$, value) ; }
+        }]]>
+      </Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>
